@@ -54,11 +54,11 @@ function draw() {
     }
     else if(keyDown(UP_ARROW)){
         writePosition(0,-5);
-        balloon.scale = balloon.scale-0.01;
+        balloon.scale = balloon.scale-0.007;
     }
     else if(keyDown(DOWN_ARROW)){
         writePosition(0,+5);
-        balloon.scale = balloon.scale+0.01;
+        balloon.scale = balloon.scale+0.007;
     }
 
   drawSprites();
