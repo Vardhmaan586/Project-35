@@ -5,7 +5,7 @@ var balloon,balloonImage;
 
 function preload(){
   bg = loadImage("Hot Air Ballon-01.png");
-  balloonImage = loadImage("Hot Air Ballon-02.png");
+  balloonImage = loadAnimation("Hot Air Ballon-02.png","Hot Air Ballon-03.png","Hot Air Ballon-04.png");
 }
 
 function setup() {
@@ -19,7 +19,7 @@ function setup() {
 
   balloonref.on("value",readBalloonPosition,showError);
 
-  balloon.addImage(balloonImage);
+  balloon.addAnimation("chbdcj",balloonImage);
   balloon.scale = 0.3;
 }
 
